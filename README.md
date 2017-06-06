@@ -94,5 +94,29 @@ $ docker run -itd 347 /bin/bash
 
 $
 
--d option runs the container in the background.
+-d refers to daemon which runs the container in the background.
+
+
+<b> Method:3</b>
+
+$docker run -itd 347 /bin/bash
+$docker attach <containerid>
+
+
+## How to save using commit?
+
+
+Step-1: Press Ctrl+P+Q to come out of container without stopping it
+
+Step-2: RUn the below command to commit the changes:
+
+$docker commit -m " Comment" <container-id> preetk/<newimagename>
+
+This is the first time we are creating Image out of running container.
+
+Please note that the container will be in running state.
+
+
+
+
 
