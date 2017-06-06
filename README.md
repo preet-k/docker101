@@ -74,7 +74,7 @@ As shown above, the docker client ran a container, ran a date command and exited
 
 ## How to Enter into a Container?
 
-Method-1:
+<b>Method-1:</b>
 
 $ docker run -it 347 /bin/bash
 
@@ -84,7 +84,7 @@ root@b30778f3fa9e:/#
 Once you type exit , it will stop the container.
 
 
-Method:2:
+<b>Method:2:</b>
 
 $ docker run -itd 347 /bin/bash
 
