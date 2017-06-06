@@ -110,7 +110,7 @@ Step-1: Press Ctrl+P+Q to come out of container without stopping it
 
 Step-2: RUn the below command to commit the changes:
 
-$docker commit -m " Comment" <container-id> preetk/<newimagename>
+$docker commit -m " Comment" <container-id> preetk/newimagename
 
 This is the first time we are creating Image out of running container.
 
