@@ -116,6 +116,20 @@ This is the first time we are creating Image out of running container.
 
 Please note that the container will be in running state.
 
+## Concept of Ports & Networking
+
+You can run multiple Web Server inside the same host in the form of container. So it means you can have multiple containers running under port 80. But when you try to expose it to your Docker host then it should have different ports.
+
+For Example:
+
+Container C1 runs Web Server at port 80 
+Container C2 runs Web Server at Port 80
+
+If Container C1 port gets exposed to Docker Host at Port 80, then Container C2 port shouldnt be exposed at the right port. It
+could either be at port 81 or port 82.
+
+
+
 
 
 
