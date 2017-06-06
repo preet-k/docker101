@@ -1,6 +1,5 @@
-# docker101
 
-### How to build Docker Image from Dockerfile
+<h1> How to build Docker Image from Dockerfile</h1>
 ## Listing Docker Images
 
 
