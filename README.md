@@ -136,9 +136,13 @@ MAINTAINER "Preet" preet@gmail.com
 RUN apt-get update
 
 RUN apt-get -y install apache2 
+
 RUN service apache2 start 
-EXPOSE 80 
+
+EXPOSE 80
+
 EXPOSE 443 
+
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 
 
