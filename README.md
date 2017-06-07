@@ -130,19 +130,15 @@ could either be at port 81 or port 82.
 
 ## Apache installed on Ubuntu - An eg.
 FROM ubuntu
-  2 MAINTAINER "Preet" <preet@gmail.com>
-  3
-  4 RUN apt-get update
-  5 RUN apt-get -y install apache2
-  6 RUN service apache2 start
-  7
-  8 EXPOSE 80
-  9
- 10 EXPOSE 443
- 11
- 12
- 13
- 14 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+
+MAINTAINER "Preet" preet@gmail.com
+
+RUN apt-get update
+RUN apt-get -y install apache2
+RUN service apache2 start
+EXPOSE 80
+EXPOSE 443
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 
 
 
