@@ -1,0 +1,15 @@
+FROM ubuntu
+  2 MAINTAINER "Preet" <preet@gmail.com>
+  3
+  4 RUN apt-get update
+  5 RUN apt-get -y install apache2
+  6 RUN service apache2 start
+  7
+  8 EXPOSE 80
+  9
+ 10 EXPOSE 443
+ 11
+ 12
+ 13
+ 14 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+~
