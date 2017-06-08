@@ -159,9 +159,162 @@ EXPOSE 443
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 ```
 
+##Volume
 
+```
 
+docker run -itd -p 80:80 -p 443:443 preetk/ubuntuwithapache
+    2  clear
+    3  vi index.html
+    4  docker run -itd preetk/ubuntuwithapache
+    5  docker ps
+    6  docker attach
+    7  docker run -itd preetk/ubuntuwithapache /bin/bash
+    8  docker attach 21cfe009abf3
+    9  docker run -itd preetk/ubuntuwithapache /bin/bash
+   10  docker ps
+   11  docker run -it preetk/ubuntuwithapache /bin/bash
+   12  clear
+   13  pwd
+   14  docker stop $(docker ps -a -q)
+   15  clear
+   16  pwd
+   17  cat index.html
+   18  clear
+   19  docker run -d -v /root/index.html:/var/www/html/ -p 80:80 -p 443:443 preetk/ubuntuwithap
+ache
+   20  docker run -d -v /root/index.html:/var/www/html/index.html -p 80:80 -p 443:443 preetk/ub
+untuwithapache
+   21  docker ps
+clear
+   23  docker ps
+   24  docker exec -it 2b7 echo "Hiiii" >> /var/www/html/index.html
+   25  docker exec -it 2b7 /bin/echo "Hiiii" >> /var/www/html/index.html
+   26  docker exec -it 2b7 /bin/bash
+   27  docker exec -it 2b7 echo hi
+   28  clear
+   29  docker ocpy
+   30  docker copy
+   31  docker cp
+   32  clear
+   33  git clone https://github.com/preetk/docker101
+   34  git clone https://github.com/preetk/docker101
+   35  git clone https://github.com/preet-k/docker101
+   36  cd docker101
+   37  clear
+   38  ls
+   39  vi Dockerfile
+   40  exitr
+   41  exit
+   42  mkdir mydir
+   43  ls
+   cp index.html mydir
+   45  git clone https://www.github.com/preet-k/docker101/Chapter-1
+   46  git clone https://www.github.com/preet-k/docker101
+   47  git clone https://www.github.com/preet-k/docker101/
+   48  git clone https://github.com/preet-k/docker101/
+   49  cd docker101
+   50  ls Chapter-1
+   51  cd Chapter-1/
+   52  ls
+   53  vi Dockerfile-ubuntuwithapache
+   54  docker build -t preetk/volume .
+   55  cd ..
+   56  cd ..
+   57  vi Dockerfile
+   58  pwd
+   59  ls
+   60  cd docker101
+   61  cd Chapter-1
+   62  ls
+   63  vi Dockerfile-ubuntuwithapache
+   64  docker build -t preetk/volume .
+   65  ls
+   pwd
+   67  clear
+   68  ls
+   69  ls
+   70  cd
+   71  ls
+   72  cd -
+   73  clear
+   74  vi Dockerfile-ubuntuwithapache
+   75  clear
+   76  docker build -t preetk/volume .
+   77  ls
+   78  cd
+   79  ls
+   80  clear
+   81  pwd
+   82  ls
+   83  cd mydir/
+   84  ls
+   85  cd ..
+   86  ls
+   87  tar cvf mydir.tar.gz mydir/
+   88  clear
+   ls
+   90  pwd
+   91  cd docker101/Chapter-1/
+   92  clear
+   93  ls
+   94  vi Dockerfile-ubuntuwithapache
+   95  clear
+   96  docker build -t preetk/volume .
+   97  docker run -itd f3 /bin/bash
+   98  docker ps
+   99  clear
+  100  docker ps
+  101  docker stop 2b
+  102  docker stop 1e
+  103  clear
+  104  docker images
+  105  docker run -dit f37 /bin/bash
+  106  docker ps
+  107  docker attach 032
+  108  docker ps
+  109  docker images
+  110  ls
+  111  vi Dockerfile-ubuntuwithapache
+  112  clear
+  ls
+  114  cp -rf /root/mydir.tar.gz .
+  115  ls
+  116  vi Dockerfile
+  117  clera
+  118  clear vi Dockerfileclear
+  119  vi Dockerfile-ubuntuwithapache
+  120  clear
+  121  docker build -t preetk/vol1 .
+  122  clear
+  123  ls
+  124  mkdir mydir
+  125  cp mydir.tar.gz mydir/
+  126  clear
+  127  ls
+  128  vi Dockerfile
+  129  mv Dockerfile-ubuntuwithapache Dockeerfile
+  130  mv Dockerfile-ubuntuwithapache Dockrfile
+  131  mv Dockeerfile Dockerfile
+  132  clear
+  133  ls
+  134  cat Dockerfile
+  135  clear
+  136  vi Dockerfile
+  ls
+  138  cd mydir/
+  139  ls
+  140  cd ..
+  141  rm -fr mydir.tar.gz
+  142  clear
+  143  ls
+  144  docker build -t preetk/vol2 .
+  145  clear
+  146  docker history
+  147  history
+  148  top
+  149  history
+[node1] (local) root@10.0.51.3 ~/docker101/Chapter-1
+$ B
 
-
-
-
+```
