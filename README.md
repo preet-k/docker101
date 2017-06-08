@@ -140,7 +140,8 @@ Container C2 runs Web Server at Port 80
 If Container C1 port gets exposed to Docker Host at Port 80, then Container C2 port shouldnt be exposed at the right port. It
 could either be at port 81 or port 82.
 
-## Apache installed on Ubuntu - An eg.
+## Sample of Dockerfile for Apache installed on Ubuntu 
+```
 FROM ubuntu
 
 MAINTAINER "Preet" preet@gmail.com
@@ -156,7 +157,7 @@ EXPOSE 80
 EXPOSE 443 
 
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
-
+```
 
 
 
