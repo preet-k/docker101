@@ -1,1 +1,15 @@
-Dockerfile
+FROM ubuntu
+  2 MAINTAINER "Preet" <preet050296@gmail.com>
+  3
+  4 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+  5
+  6
+  7
+  8 RUN echo "deb http://repo.mongodb.org/apt/ubuntu $(cat /etc/lsb-release | grep DISTRIB_CODE
+    NAME | cut -d= -f2)/mongodb-org/3.2 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3
+    .2.list
+  9 RUN apt-get update && apt-get install -y mongodb-org
+ 10 RUN mkdir -p /data/db
+ 11 EXPOSE 27017
+ 12 ENTRYPOINT ["/usr/bin/mongod"]
+~
