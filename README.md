@@ -326,3 +326,9 @@ $ B
  ```
  docker run python python -V
  ```
+ ### Using Compose
+ ```
+ vi docker-compose.yml
+ > docker-compose.yml
+ docker-compose up -d
+ 
