@@ -318,3 +318,7 @@ clear
 $ B
 
 ```
+### To mention the dockerfile for building.
+```
+ docker build -t preetk/web2 -f /root/docker101/Chapter-1/Dockerfile-ubuntuwithapache .
+ ```
