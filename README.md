@@ -322,3 +322,7 @@ $ B
 ```
  docker build -t preetk/web2 -f /root/docker101/Chapter-1/Dockerfile-ubuntuwithapache .
  ```
+ ### To run python and know version directly.
+ ```
+ docker run python python -V
+ ```
