@@ -331,4 +331,9 @@ $ B
  vi docker-compose.yml
  > docker-compose.yml
  docker-compose up -d
+``` 
+ ### History
+ clear                                            
+ vi docker-compose.yml                                                                                           vi   docker-compose.yml                                                                        5  vi docker-compose.yml                                                                        6  vi rm docker-compose.yml                                                                     7  clear                                                                                        8  clear                                                                                        9  vi docker-compose.yml                                                                       10  vi docker-compose.yml                                                                       11  > docker-compose.yml                                                                        12  vi docker-compose.yml                                                                       13  clear                                                                                       14  cat docker-compose.yml                                                                      15  clear                                                                                       16  vi docker-compose.yml
+ 
  
