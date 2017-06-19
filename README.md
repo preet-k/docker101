@@ -337,3 +337,53 @@ $ B
  vi docker-compose.yml                                                                                           vi   docker-compose.yml                                                                        5  vi docker-compose.yml                                                                        6  vi rm docker-compose.yml                                                                     7  clear                                                                                        8  clear                                                                                        9  vi docker-compose.yml                                                                       10  vi docker-compose.yml                                                                       11  > docker-compose.yml                                                                        12  vi docker-compose.yml                                                                       13  clear                                                                                       14  cat docker-compose.yml                                                                      15  clear                                                                                       16  vi docker-compose.yml
  
  
+
+
+### Today
+git pull CentOS/CentOS-Dockerfiles
+    2  git clone CentOS/CentOS-Dockerfiles
+    3  git clone CentOS/CentOS-Dockerfiles/httpd/centos7/
+    4  git clone http://github.com/CentOS/CentOS-Dockerfiles/httpd/centos7/
+    5  git clone https://github.com/CentOS-Dockerfiles/httpd/centos7/
+    6  git clone https://github.com/CentOS-Dockerfiles/httpd/centos7/Dockerfile
+    7  git clone https://github.com/CentOS/CentOS-Dockerfiles
+    8  ls
+    9  cd CentOS-Dockerfiles/
+   10  ls
+   11  cd httpd
+   12  ls
+   cd centos7
+   14  ls
+   15  vi Dockerfile
+   16  docker build -t preetk/centwithapache .
+   17  docker run -itd -p 80:80 preetk/centwithapache
+   18  docker ps
+   19  vi Dockerfile
+   20  docker run -itd -p 80:80 preetk/centwithapache /bin/sh
+   21  docker run -itd -p 81:80 preetk/centwithapache /bin/sh
+   22  ls
+   23  docker attach d13a0b280f521c6b0eb3dcef3ec79452db5a66a8ce046569f2949
+   24  vi index.html
+   25  docker run -itd -v root/CentOS-Dockerfiles/httpd/centos7/index.html:/var/www/html/ wq-p
+ 81:80 preetk/centwithapache /bin/sh
+   26  docker run -itd -v root/CentOS-Dockerfiles/httpd/centos7/index.html:/var/www/html/ wq-p
+ 81:80 preetk/centwithapache /bin/sh
+   27  docker run -itd -v root/CentOS-Dockerfiles/httpd/centos7/index.html:/var/www/html/ -p 8
+1:80 preetk/centwithapache /bin/sh
+   28  pwd
+   29  docker run -itd -v /root/CentOS-Dockerfiles/httpd/centos7/index.html:/var/www/html/ -p
+81:80 preetk/centwithapache /bin/sh
+   30  docker run -itd -v /root/CentOS-Dockerfiles/httpd/centos7/index.html:/var/www/html/ -p
+82:80 preetk/centwithapache /bin/sh
+31  docker run -itd -v /root/CentOS-Dockerfiles/httpd/centos7/index.html:/var/www/html/ -p
+82:80 preetk/centwithapache
+   32  docker ps
+   33  docker rm $(ps -a)
+   34  docker run -itd -v /root/CentOS-Dockerfiles/httpd/centos7/index.html:/var/www/html/ -p
+82:80 preetk/centwithapache /bin/bash
+   35  docker ps
+   36  docker rm d13a0b280f52
+   37  docker stop d13a0b280f52
+   38  docker stop 49a75af94c8d
+   39  docker ps
+   40  history
