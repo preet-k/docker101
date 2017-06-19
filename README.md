@@ -340,6 +340,7 @@ $ B
 
 
 ### Today
+```
 git pull CentOS/CentOS-Dockerfiles
     2  git clone CentOS/CentOS-Dockerfiles
     3  git clone CentOS/CentOS-Dockerfiles/httpd/centos7/
@@ -387,3 +388,4 @@ git pull CentOS/CentOS-Dockerfiles
    38  docker stop 49a75af94c8d
    39  docker ps
    40  history
+```
