@@ -344,3 +344,10 @@ $ B
   ```
   docker run -itd -v /root/index.html:/var/www/html/index.html -p 82:80 preetk/centwithapache
 ```
+### July 3, Monday
+```
+We have pulled docker-ee.repo from docker store(store.docker.com)...
+This we will add to /etc/yum.repos.d
+Once added, run: yum update
+This we are doing because linuxlib does not contain docker. We need docker on RHEL of host whose IP is 100.98.26.33
+```
