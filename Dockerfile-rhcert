@@ -1,23 +1,26 @@
-FROM centos:7.3
-  2 MAINTAINER "Preet" <preet050296@gmail.com>
-  3 RUN yum update
-  4 RUN wget ftp://partners.redhat.com/a166eabc5cf5df158922f9b06e5e7b21/hwcert/RHEL7/
-  5 RUN yum install -y stress-0.18.8-1.4.el7.x86_64.rpm \
-  6 stress-0.18.8-1.4.el7.src.rpm \
-  7 stress-0.18.8-1.4.el7.s390x.rpm \
-  8 stress-0.18.8-1.4.el7.s390.rpm \
-  9 stress-0.18.8-1.4.el7.ppc64.rpm \
- 10 stress-0.18.8-1.4.el7.ppc.rpm \
- 11 stress-0.18.8-1.4.el7.i686.rpm \
- 12 redhat-certification-information-1.7.0.6-20141218.el7.noarch.rpm \
- 13 redhat-certification-hardware-1.7.0.6-20141218.el7.noarch.rpm \
- 14 lmbench-3.0a7-7b.EL7.x86_64.rpm \
- 15 lmbench-3.0a7-7b.EL7.src.rpm \
- 16 lmbench-3.0a7-7b.EL7.s390x.rpm \
- 17 lmbench-3.0a7-7b.EL7.s390.rpm \
- 18 lmbench-3.0a7-7b.EL7.ppc64.rpm \
- 19 lmbench-3.0a7-7b.EL7.ppc.rpm \
- 20 lmbench-3.0a7-7b.EL7.i686.rpm \
- 21 dt-15.14-2.el7.x86_64.rpm \
- 22 dt-15.14-2.el7.src.rpm \
- 23 dt-15.14-2.el7.s390x.rpm \
+FROM centos:latest
+MAINTAINER "Preet" <preet050296@gmail.com>
+RUN yum clean all
+RUN wget ftp://partners.redhat.com/a166eabc5cf5df158922f9b06e5e7b21/hwcert/RHEL7/
+RUN yum install -y stress-0.18.8-1.4.el7.x86_64.rpm \
+stress-0.18.8-1.4.el7.src.rpm \
+stress-0.18.8-1.4.el7.s390x.rpm \
+stress-0.18.8-1.4.el7.s390.rpm \
+stress-0.18.8-1.4.el7.ppc64.rpm \
+stress-0.18.8-1.4.el7.ppc.rpm \
+stress-0.18.8-1.4.el7.i686.rpm \
+redhat-certification-information-1.7.0.6-20141218.el7.noarch.rpm \
+redhat-certification-hardware-1.7.0.6-20141218.el7.noarch.rpm \
+lmbench-3.0a7-7b.EL7.x86_64.rpm \
+lmbench-3.0a7-7b.EL7.src.rpm \
+lmbench-3.0a7-7b.EL7.s390x.rpm \
+lmbench-3.0a7-7b.EL7.s390.rpm \
+lmbench-3.0a7-7b.EL7.ppc64.rpm \
+lmbench-3.0a7-7b.EL7.ppc.rpm \
+lmbench-3.0a7-7b.EL7.i686.rpm \
+dt-15.14-2.el7.x86_64.rpm \
+dt-15.14-2.el7.src.rpm \
+dt-15.14-2.el7.s390x.rpm \
+kernel-debuginfo-3.10.0-514.el7.x86_64.rpm \
+kernel-debuginfo-common-x86_64-3.10.0-123.1.2.el7.x86_64.rpm
+CMD["/bin/sh"]
