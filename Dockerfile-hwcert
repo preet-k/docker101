@@ -1,0 +1,10 @@
+FROM centos:7
+MAINTAINER "Preet" <preet050296@gmail.com>
+RUN yum install -y wget
+RUN wget http://debuginfo.centos.org/7/x86_64/kernel-debuginfo-3.10.0-514.el7.x86_64.rpm
+ADD ../rhcert /root/rhcert
+WORKDIR /root/rhcert
+
+RUN yum update -y
+
+RUN yum install -y *.rpm
