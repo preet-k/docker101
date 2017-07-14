@@ -353,5 +353,7 @@ This we are doing because linuxlib does not contain docker. We need docker on RH
 ```
 ### July 14, Friday
 ```
-The image rhcert has been uploaded on the test manager. Now we need run the container, enter into it and then run rhcert-backend server start. For this, we need to install the rpms first, inside the container.
+The image rhcert has been uploaded on the test manager.
+Now we need run the container, enter into it and then run rhcert-backend server start. 
+For this, we need to install the rpms first, inside the container.
 ```
