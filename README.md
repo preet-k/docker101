@@ -351,3 +351,7 @@ This we will add to /etc/yum.repos.d
 Once added, run: yum update
 This we are doing because linuxlib does not contain docker. We need docker on RHEL of host whose IP is 100.98.26.33
 ```
+### July 14, Friday
+```
+The image rhcert has been uploaded on the test manager. Now we need run the container, enter into it and then run rhcert-backend server start. For this, we need to install the rpms first, inside the container.
+```
