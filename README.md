@@ -1,7 +1,7 @@
 
 <h1> How to build Docker Image from Dockerfile</h1>
 
-## Listing Docker Images
+## Listing Docker Imagess
 
 
 ```$docker images
